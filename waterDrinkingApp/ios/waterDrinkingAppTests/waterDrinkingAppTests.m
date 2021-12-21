@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface waterDrinkingAppTests : XCTestCase
+@interface WaterDrinkingAppTests : XCTestCase
 
 @end
 
-@implementation waterDrinkingAppTests
+@implementation WaterDrinkingAppTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {
