@@ -13,6 +13,9 @@ password: test123
 
 after login-in notifications will be scheduled every 2 hours.
 
+if you wanna try it on your phone (Android required) download this .apk file
+https://drive.google.com/file/d/1Y2TXgi0Q0iJLFYRXm6gdPzRFRZK5Jnvz/view?usp=sharing
+
 ## Setup
 
 `Node` is required to run this add
