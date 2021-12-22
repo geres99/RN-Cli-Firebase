@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from 'react-native';
-import Typography from 'components/atoms/Typography';
 import StyledView from 'components/styles/StyledView/styles';
 import ScreenContentWrapper from 'components/molecules/ScreenContentWrapper';
 import useHomeScreen from './hooks';
