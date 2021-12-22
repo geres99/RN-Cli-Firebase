@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import PushNotification from 'react-native-push-notification';
 import { getAsyncStorageItem } from 'setup/asyncStorage';
 import { UserContextProvider } from './index';
+import { isToday } from 'date-fns';
 
 const UserContextWrapper: React.FC = ({ children }) => {
   const [isAppLoading, setIsAppLoading] = useState(true);
@@ -33,7 +34,8 @@ const UserContextWrapper: React.FC = ({ children }) => {
       const waterData = await getAsyncStorageItem('waterAmount');
       setIsLoggedIn(JSON.parse(loginData));
       setAreNotificationsScheduled(JSON.parse(notificationData));
-      if (JSON.parse(waterData)) setWaterAmount(JSON.parse(waterData));
+      if (isToday(new Date(JSON.parse(waterData).date)))
+        setWaterAmount(JSON.parse(waterData));
       setIsAppLoading(false);
     };
 

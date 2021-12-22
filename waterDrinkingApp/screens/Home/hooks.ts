@@ -44,7 +44,6 @@ const useHomeScreen = () => {
       handleNotification();
       setAreNotificationsScheduled(true);
       saveToStorage('areNotificationsScheduled', true);
-      console.log(areNotificationsScheduled, 'Welcome to my house');
     }
   }, []);
 
