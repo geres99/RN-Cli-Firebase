@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "70502298337",
+    "project_id": "waterdrinkingapp-4e553",
+    "storage_bucket": "waterdrinkingapp-4e553.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70502298337:android:43d02f8ecee6f74a53fda0",
+        "android_client_info": {
+          "package_name": "com.waterdrinkingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70502298337-vbhp2ulakqb59qt3l3tqal2jkp3jjihv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1BYLpGmpzohsYEjHCql4JJHvX2GGOXmg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70502298337-vbhp2ulakqb59qt3l3tqal2jkp3jjihv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

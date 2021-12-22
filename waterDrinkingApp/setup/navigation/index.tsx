@@ -1,17 +1,17 @@
 import React from 'react';
-import { LogBox } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from 'screens/Home';
 import LoginScreen from 'screens/Login';
 import { ScreenNames } from './enums';
 import { useUserContext } from 'contexts/userContext';
+import { LogBox } from 'react-native';
 
 const MainNavigation = () => {
   const Stack = createNativeStackNavigator();
-  const { isLoggedIn } = useUserContext();
+  const { isLoggedIn, isAppLoading } = useUserContext();
   LogBox.ignoreLogs(['AsyncStorage has been extracted from react-native core']);
 
-  return (
+  return !isAppLoading ? (
     <Stack.Navigator
       initialRouteName={isLoggedIn ? ScreenNames.Home : ScreenNames.Login}
     >
@@ -26,7 +26,7 @@ const MainNavigation = () => {
         options={{ headerShown: false }}
       />
     </Stack.Navigator>
-  );
+  ) : null;
 };
 
 export default MainNavigation;

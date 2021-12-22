@@ -1,7 +1,7 @@
 export const fonts = {
-  sourceSansProBold: 'sourceSansProBold',
-  sourceSansProSemiBold: 'sourceSansProSemiBold',
-  sourceSansProRegular: 'sourceSansProRegular',
+  sourceSansProBold: 'SourceSansPro-Bold',
+  sourceSansProSemiBold: 'SourceSansPro-SemiBold',
+  sourceSansProRegular: 'SourceSansPro-Regular',
 };
 
 export const typography = {

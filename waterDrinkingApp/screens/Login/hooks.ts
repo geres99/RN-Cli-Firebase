@@ -16,7 +16,7 @@ const useLoginScreen = () => {
     try {
       await signInWithEmailAndPassword(auth, usernameInput, passwordInput);
       saveToStorage('isLoggedIn', true);
-      navigation.navigate(ScreenNames.Home);
+      navigation?.navigate(ScreenNames.Home);
     } catch (error) {
       ErrorToast.show({
         type: 'error',
