@@ -34,8 +34,13 @@ const UserContextWrapper: React.FC = ({ children }) => {
       const waterData = await getAsyncStorageItem('waterAmount');
       setIsLoggedIn(JSON.parse(loginData));
       setAreNotificationsScheduled(JSON.parse(notificationData));
-      if (isToday(new Date(JSON.parse(waterData).date)))
+      if (
+        isToday(
+          JSON.parse(waterData)?.date && new Date(JSON.parse(waterData).date)
+        )
+      ) {
         setWaterAmount(JSON.parse(waterData));
+      }
       setIsAppLoading(false);
     };
 
