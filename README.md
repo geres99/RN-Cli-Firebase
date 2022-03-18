@@ -55,6 +55,4 @@ yarn lint
 
 ## Build to download
 
-```
 https://drive.google.com/u/0/uc?id=1Y2TXgi0Q0iJLFYRXm6gdPzRFRZK5Jnvz&export=download
-```
