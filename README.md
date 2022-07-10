@@ -38,7 +38,7 @@ yarn android
 
 ```
 npx pod-install
-yarn android
+yarn ios
 ```
 
 ## Running the tests
